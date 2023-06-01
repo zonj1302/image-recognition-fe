@@ -19,7 +19,7 @@ function Register({ onRouteChange, loadUser }) {
 
     const onSubmitSignIn = (event) => {
         event.preventDefault();
-        fetch('http://localhost:3000/register', {
+        fetch('https://mybackend-rgzu.onrender.com/register', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
